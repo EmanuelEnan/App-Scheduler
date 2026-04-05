@@ -1,16 +1,7 @@
-# app_scheduler
+# App Scheduler
 
-A new Flutter project.
+This is a scheduler app where user can select an app from their device's apps and schedule a date and time with the options of repetations( daily, weekly, once, custom etc.). The app will then launch automatically at the user's selected schedule. 
 
-## Getting Started
+User can edit the schedule later as they wish and the app will launch on the updated schedule. If user choose two or more apps on the same schedule, a conflict warning will show up but the apps will still launch simultaneously. 
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+To achieve this functionality, I've used the power of platform channels through WorkManager. Also used local persistance to store the selected schedule and other data seamlessly.
