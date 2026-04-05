@@ -76,7 +76,10 @@ class ScheduleFormNotifier extends Notifier<ScheduleFormState> {
       customWeekdays: List<int>.from(state.customWeekdays),
       createdAt: DateTime.now(),
     );
-
+    if (state.conflicts.isNotEmpty) {
+      print('Conflicts detected with: ${state.conflicts.join(', ')}');
+      return null;
+    }
     await ref.read(schedulesProvider.notifier).add(schedule);
     return schedule;
   }

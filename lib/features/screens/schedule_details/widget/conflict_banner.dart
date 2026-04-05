@@ -98,7 +98,7 @@ class ConflictBanner extends StatelessWidget {
                 ),
                 const SizedBox(height: 6),
                 const Text(
-                  'You can still save — both schedules will run.',
+                  'Please choose a different time to avoid conflicts.',
                   style: TextStyle(fontSize: 11, color: Color(0xFF9B99B5)),
                 ),
               ],

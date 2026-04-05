@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-/// Reusable form-section card with a muted label and animated error border.
 class SectionCard extends StatelessWidget {
   final Widget child;
   final String? label;
